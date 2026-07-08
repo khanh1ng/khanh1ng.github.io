@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <h1>Markets are a game of <em>incomplete information</em>. I build systems that update faster than I can.</h1>
+  <p>
+    Quantitative researcher — MA in Computational &amp; Applied Mathematics, University of Chicago.
+    I work on systematic strategies, market microstructure, and event probability:
+    funding-rate carry, credit-spread transmission, and prediction-market pricing.
+  </p>
+  <span class="mono">
+    <a href="https://github.com/khanh1ng">github.com/khanh1ng</a> · New York
+  </span>
+</section>
+
+<section class="section" id="research">
+  <h2 class="section-title">Research</h2>
+
+  <div class="project">
+    <span class="project-glyph">α</span>
+    <div>
+      <h3><a href="#">Delta-neutral crypto funding-rate carry</a></h3>
+      <p>Cross-venue carry strategy harvesting perpetual funding-rate spreads across six exchanges,
+      delta-hedged spot vs. perp. Full backtest with execution-cost modeling and drawdown analysis.</p>
+    </div>
+    <span class="project-meta">UChicago QTS · 2026</span>
+  </div>
+
+  <div class="project">
+    <span class="project-glyph">β</span>
+    <div>
+      <h3><a href="#">CDS predictive regression</a></h3>
+      <p>Modeling equity-to-CDS spread transmission — how information in equity moves propagates into
+      single-name credit. Supervised by Dr. Brian Boonstra.</p>
+    </div>
+    <span class="project-meta">UChicago · 2026</span>
+  </div>
+
+  <div class="project">
+    <span class="project-glyph">Σ</span>
+    <div>
+      <h3><a href="#">qants — systematic research framework</a></h3>
+      <p>Backtrader-based backtesting and live-trading infrastructure: IBKR and Alpaca integrations,
+      signal enrichment pipelines, and strategy monitoring.</p>
+    </div>
+    <span class="project-meta">ongoing</span>
+  </div>
+
+  <div class="project">
+    <span class="project-glyph">ƒ</span>
+    <div>
+      <h3><a href="#">Factor pipeline — VNPN Quant Club</a></h3>
+      <p>ML data pipeline screening 42 candidate factors; documentation of the out-of-sample survivors
+      and the graveyard of those that didn't make it.</p>
+    </div>
+    <span class="project-meta">2025–26</span>
+  </div>
+</section>
+
+<section class="section" id="writing">
+  <h2 class="section-title">Writing</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit: 6 %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span class="mono">{{ post.date | date: "%b %Y" }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

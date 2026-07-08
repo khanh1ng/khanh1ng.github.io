@@ -1,0 +1,13 @@
+title: Khanh Nguyen
+description: Quantitative research — systematic strategies, market microstructure, prediction markets.
+url: "https://khanh1ng.github.io"
+author: Khanh Nguyen
+
+markdown: kramdown
+permalink: /writing/:year/:slug/
+
+# Pages Jekyll build: no theme, custom layouts only
+theme: null
+
+exclude:
+  - README.md
