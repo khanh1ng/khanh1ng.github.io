@@ -10,12 +10,12 @@
 ---------------------------------------------------------------- */
 
 :root {
-  --ink: #101E2A;
-  --paper: #F3F5F6;
-  --muted: #5A6A76;
-  --gold: #A2801F;
-  --hairline: #D7DDE1;
-  --wash: #E9EDEF;
+  --ink: #ECEFF1;
+  --paper: #12161B;
+  --muted: #8A97A0;
+  --gold: #C9A227;
+  --hairline: #262C33;
+  --wash: #1A1F26;
   --display: "Cormorant Garamond", Georgia, serif;
   --body: "Inter", -apple-system, sans-serif;
   --mono: "IBM Plex Mono", "SF Mono", monospace;
@@ -180,10 +180,11 @@ a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
   background: var(--wash); padding: 0.1em 0.35em; border-radius: 3px;
 }
 .post-body pre {
-  background: var(--ink); color: #DDE5EA;
+  background: #08090B; color: #DDE5EA;
   padding: 1.1rem 1.3rem; overflow-x: auto;
   margin: 1.4rem 0; border-radius: 4px;
   font-size: 0.85rem; line-height: 1.55;
+  border: 1px solid var(--hairline);
 }
 .post-body pre code { background: none; padding: 0; color: inherit; }
 
